@@ -9,9 +9,9 @@ class Scraper
     verified_students = []
     index_page.css("div.student-card").each do |student|
       hash = {
-        name : student.css("h4.student-name").text
-        location : student.css("p.student-location").text
-        profile_url : student.css("a").attribute("href").value
+        name: student.css("h4.student-name").text,
+        location: student.css("p.student-location").text,
+        profile_url: student.css("a").attribute("href").value,
       }
     binding.pry
   end
