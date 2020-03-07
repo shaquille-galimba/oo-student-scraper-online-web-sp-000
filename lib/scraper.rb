@@ -8,6 +8,7 @@ class Scraper
     index_page = Nokogiri::HTML(html)
 
     verified_students = []
+
     index_page.css("div.student-card").each do |student|
       hash = {
         name: student.css("h4.student-name").text,
