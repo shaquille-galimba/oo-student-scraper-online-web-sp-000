@@ -7,7 +7,7 @@ class Scraper
     html = open(index_url)
     index_page = Nokogiri::HTML(html)
 
-    verified_students = []
+    students = []
 
     index_page.css("div.student-card").each do |student|
       hash = {
@@ -15,9 +15,9 @@ class Scraper
         location: student.css("p.student-location").text,
         profile_url: student.css("a").attribute("href").value,
       }
-      verified_students << hash
+      students << hash
     end
-    verified_students
+    students
   end
 
   def self.scrape_profile_page(profile_url)
