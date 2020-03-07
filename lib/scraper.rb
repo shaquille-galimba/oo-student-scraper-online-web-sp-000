@@ -15,7 +15,4 @@ class Scraper
 
 end
 
-# index_url = "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"
-# Scraper.scrape_index_page(index_url)
-
-# index_page.css("div.roster-cards-container.student-card a div.card-text-container h4.student-name").text
+# roster_container : index_page.css("div.student-card")
