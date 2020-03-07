@@ -18,4 +18,4 @@ end
 # roster_container : index_page.css("div.student-card")
 # name : roster_container.css("h4.student-name").text
 # location : roster_container.css("p.student-location").text
-index_page.css("div.student-card").first.css("a").text
+index_page.css("div.student-card").first.css("a").attribute("href").value
