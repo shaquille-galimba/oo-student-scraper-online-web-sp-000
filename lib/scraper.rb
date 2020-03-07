@@ -41,6 +41,7 @@ class Scraper
 
     student_attribute[:profile_quote] = profile_page.css("div.profile-quote").text
     student_attribute[:bio] = profile_page.css("div.description-holder p").text
+
     student_attribute
   end
 
