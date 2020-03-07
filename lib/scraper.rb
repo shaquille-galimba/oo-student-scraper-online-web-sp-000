@@ -15,6 +15,7 @@ class Scraper
       }
       verified_students << hash
     end
+    verified_students
     # binding.pry
   end
 
