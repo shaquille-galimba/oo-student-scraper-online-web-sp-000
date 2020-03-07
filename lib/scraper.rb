@@ -35,3 +35,5 @@ end
 # name : roster_container.css("h4.student-name").text
 # location : roster_container.css("p.student-location").text
 # profile_url : index_page.css("div.student-card").first.css("a").attribute("href").value
+
+# social_container = profile_page.css("div.social-icon-container a")
