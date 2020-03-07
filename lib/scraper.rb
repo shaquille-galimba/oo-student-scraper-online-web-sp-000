@@ -26,7 +26,7 @@ class Scraper
     binding.pry
 
     student_attribute = {}
-    
+
   end
 
 end
